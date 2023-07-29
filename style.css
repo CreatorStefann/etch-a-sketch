@@ -21,4 +21,27 @@ body {
     align-items: center;
     width: 512px;
     height: 512px;
-  }
+    margin-top: 100px;
+}
+
+.grid-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    width: 120px;
+    height: 70px;
+    border: 3px solid red;
+    background-color: rgb(13, 136, 136);
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: red;
+}
+

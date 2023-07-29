@@ -19,6 +19,13 @@ function createGrid() {
   }
 }
 
+function getRandomRGB() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    return `rgb(${r}, ${g}, ${b})`;
+  }
+
 function hover() {
   let isMouseDown = false;
 
@@ -33,7 +40,8 @@ function hover() {
   divs.forEach((div) => {
     div.addEventListener('mouseenter', () => {
       if (isMouseDown) {
-        div.style.backgroundColor = 'black';
+        const randomColor = getRandomRGB();
+        div.style.backgroundColor = randomColor;
       }
     });
   });
